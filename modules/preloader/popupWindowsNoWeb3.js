@@ -26,3 +26,4 @@ window.store = require('./rendererStore');
 
 window.render = require('react-dom').render;
 window.React = require('react');
+window.i18n = require('../i18n.js');

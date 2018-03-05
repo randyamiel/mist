@@ -34,7 +34,8 @@ Template.body.helpers({
             var renderWindow = location.hash.match(/#([a-zA-Z]*)_?/);
 
             // TODO: handle react components
-            if (renderWindow[1] === 'about') {
+            const reactComponents = [ 'about', 'requestAccount' ];
+            if (reactComponents.includes(renderWindow[1])) {
                 return false;
             }
 
